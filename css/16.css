@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    height: 3000px;
+}
+
+.position {
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    background-color: silver;
+    position: relative;
+    top: 150px;
+}
+
+.position div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+}
+
+.position div:nth-child(1) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: green;
+}
+/* top, right, bottom, left */
+
+.position div:nth-child(2) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: yellow;
+}
+
+.position div:nth-child(3) {
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    background-color: violet;
+}
+
+.position div:nth-child(4) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: tan;
+}
+
+.position div:nth-child(5) {
+    position: absolute;
+    left: 0;
+    top: -100px;
+    background-color: aquamarine;
+}
+
+.position div:nth-child(6) {
+    position: fixed;
+    right: 300px;
+    bottom: 300px;
+    background-color: orange;
+}
+
+.position div:nth-child(7) {
+    position: sticky;
+    top: 50px;
+    background-color: aliceblue;
+}
+
+.list {
+    width: 800px;
+    margin: 300px auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+}
+
+.list .item {
+    width: 380px;
+    position: relative;
+    color: white;
+}
+
+.list .item img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.list .item .text {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: tan;
+    text-align: center;
+}
+
+.list-02 {
+    width: 1280px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.list-02 .item {
+    width: 300px;
+    position: relative;
+}
+
+.list-02 .item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.list-02 .item p {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+}
+
+
+
