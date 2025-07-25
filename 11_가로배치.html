@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가로배치</title>
+    <Style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .list {
+            width: 600px;
+            background-color: antiquewhite;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+         .list .item{
+            width: 270px;
+            margin-bottom: 40px;
+         }
+         .list .item img{
+            /* width: 270px;  */
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+         }
+
+        .content {
+            width: 600px;
+            background-color: burlywood;
+            margin: 0 auto;
+            padding: 0 16px;
+            box-sizing: border-box;
+        }
+         
+         .content ul{
+            display: flex;
+         }
+         .content ul li{
+            border: 1px solid black;
+            height: 40px;
+            padding: 0 20px;
+            margin-right: 20px;
+            line-height: 40px;
+         }
+    </Style>
+</head>
+
+<body>
+    <div class="list">
+
+        <div class="item">
+            <img src="img/영화/부서진 여름.png" alt="">
+            <p>이정명 작가의 장편소설작</p>
+        </div><!-- item end -->
+
+        <div class="item">
+            <img src="img/영화/한경-Business.jpg" alt="">
+            <p>2030 눈물의 투자기</p>
+        </div><!-- item end -->
+
+        <div class="item">
+            <img src="img/영화/밀리도서-1.png" alt="">
+            <p>어린 아이의 동화편집작</p>
+        </div><!-- item end -->
+
+        <div class="item">
+            <img src="img/영화/리빙센스_2021.06.jpg" alt="">
+            <p>2023 최고의 작품작</p>
+        </div><!-- item end -->
+        </div>
+
+    <div class="content">
+        <h1>동네서점</h1>
+        <ul>
+            <li>베스트</li>
+            <li>신상품</li>
+            <li>이벤트</li>
+            <li>사은품</li>
+        </ul>
+    </div><!-- .content -->
+</body>
+</html>

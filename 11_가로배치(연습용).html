@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가로배치(연습용)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .list {
+            width: 600px;
+            background-color: skyblue;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        .list .item {
+            width: 300px;
+            margin-bottom: 50px;
+        }
+
+        .list .item img {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .content {
+            width: 600px;
+            background-color: yellowgreen;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        .content ul li {
+            border: 1px solid black;
+            border-radius: 20px;
+            height: 30px;
+            padding: 0 20px;
+            margin-right: 20px;
+            line-height: 30px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="content">
+        <h1>微信支付(위쳇페이) 사용방법</h1>
+        <ul>
+            <li>QR코드</li>
+            <li>모바일 간편결제</li>
+            <li>스마트폰 결제</li>
+            <li>해외 카드 이용</li>
+        </ul>
+    </div> <!-- .content -->
+
+    <div class="list">
+
+        <div class="item">
+            <img src="img/위쳇페이/위쳇페이 QR코드.jpg" alt="">
+            <p>모바일 내 위쳇 QR코드</p>
+        </div>
+
+        <div class="item">
+            <img src="img/위쳇페이/위쳇페이 모바일 간편결제.jpg" alt="">
+            <p>모바일 간편결제 화면</p>
+        </div>
+
+        <div class="item">
+            <img src="img/위쳇페이/위쳇페이 스마트폰 결제화면창.jpg" alt="">
+            <p>스마트폰 결제 화면</p>
+        </div>
+
+        <div class="item">
+            <img src="img/위쳇페이/위쳇페이 해외카드들.jpg" alt="">
+            <p>위쳇페이 내 사용할 수 있는 해외 카드들</p>
+        </div>
+        </div>
+
+       
+</body>
+
+</html>
